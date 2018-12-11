@@ -26,7 +26,7 @@ from mycroft.skills.core import MycroftSkill
 from mycroft.util import play_mp3
 from mycroft.util.log import getLogger
 
-__author__ = 'kfezer'
+__author__ = 'plvaluer'
 
 LOGGER = getLogger(__name__)
 
