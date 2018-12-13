@@ -47,10 +47,7 @@ class DailyMeditationSkill(MycroftSkill):
         try:
             data = feedparser.parse("http://www.themeditationpodcast.com/tmp.xml")
             self.speak_dialog('daily.meditation')
-            time.sleep(3)
-            self.process = play_mp3(
-                re.sub(
-                    'https', 'http', data['entries'][0]['enclosures'][0]['href']))
+            time.sleep(5)
 
         except Exception as e:
             LOGGER.error("Error: {0}".format(e))
