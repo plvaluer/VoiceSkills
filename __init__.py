@@ -45,7 +45,6 @@ class DailyMeditationSkill(MycroftSkill):
 
     def handle_intent(self, message):
         try:
-            data = feedparser.parse("http://www.themeditationpodcast.com/tmp.xml")
             self.speak_dialog('daily.meditation')
             time.sleep(5)
 
